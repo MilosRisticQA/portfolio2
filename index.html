@@ -15,7 +15,7 @@
 <body id="bg-img">
   <div class="overlay"></div>
   <header>
-    <div class="menu-btn animated fadeInRight">
+    <div class="menu-btn">
       <div class="btn-line"></div>
       <div class="btn-line"></div>
       <div class="btn-line"></div>
@@ -69,7 +69,7 @@
       <!-- <i class="fab fa-facebook fa-2x"></i> -->
       <!-- </a> -->
       <a href="https://www.linkedin.com/in/mristicqa/" target="_blank">
-        <i class="fab fa-linkedin fa-2x animated fadeInLeft"></i>
+        <i class="fab fa-linkedin fa-2x "></i>
       </a>
       <a href="https://github.com/MiloshR" target="_blank">
         <i class="fab fa-github fa-2x animated fadeInLeft"></i>
@@ -185,9 +185,13 @@
     tl.from("#close_button", 1, { x: "680", opacity: 0, ease: Power2.easeOut }, "-=1.1");
     tl.from("#maximize_button", 0.9, { x: "680", opacity: 0, ease: Power1.easeOut }, "-=.5");
     tl.from("#minimize_button", 0.9, { x: "680", opacity: 0, ease: Power1.easeOut }, "-=.3");
+    tl.from(".fa-github", 0.9, { x: "-280", opacity: 0, ease: Power3.easeOut }, "-=.3");
+    tl.from(".fa-linkedin", 2, { x: "-200", opacity: 0, ease: Power3.easeOut }, "-=.9");
+    tl.from(".fa-file-pdf", 2, { x: "200", opacity: 0, ease: Power3.easeOut }, "-=.9");
+    tl.from(".menu-btn", 2, { x: "200", opacity: 0, ease: Power3.easeOut }, "-=1");
     //tl.from(".text-secondary", 0.9, { y: "-380", opacity: 0, ease: Power1.easeOut }, "-=.3");
-    tl.from(".lg-heading", 4, { y: "680", opacity: 0, ease: Power4.easeOut }, "-=.9");
-    tl.from(".sm-heading", 4, { opacity: 0, ease: Power1.easeOut }, "-=.6");
+    tl.from(".lg-heading", 3, { y: "880", opacity: 0, ease: Power4.easeOut }, "-=.9");
+    tl.from(".sm-heading", 4, { opacity: -1, ease: Power3.easeOut }, "-=.9");
   </script>
   <script src="js/main.js"></script>
 </body>
