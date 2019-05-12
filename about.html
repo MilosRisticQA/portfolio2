@@ -62,10 +62,10 @@
       Allow me to introduce myself..
     </h2> -->
     <div class="about-info">
-      <h1 class="lg-heading-about animated fadeInLeft">About</h1>
-      <h1 class="lg-heading-about2 animated fadeInLeft">Me</h1>
+      <h1 class="lg-heading-about ">About</h1>
+      <h1 class="lg-heading-about2 ">Me</h1>
       <!-- <img src="/dist/img/portrait_small.jpg" alt="Miloš Ristić" class="bio-image animated slideInDown" /> -->
-      <div class="bio animated fadeIn">
+      <div class="bio ">
         <h3 class="text-secondary">BIO</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur rerum veniam molestias, quas id illum sed
@@ -141,8 +141,10 @@
 
   <script>
     var tl = new TimelineMax();
-
-    tl.from(".job-1", 3, { x: "-280", opacity: 0, ease: Power3.easeOut }, '+=8');
+    tl.from(".lg-heading-about", 3, { x: "-280", opacity: 0, ease: Power3.easeOut });
+    tl.from(".lg-heading-about2", 3, { x: "-480", opacity: 0, ease: Power3.easeOut }, '-=2');
+    tl.from(".bio", 6, { opacity: 0, ease: Power3.easeOut }, '-=.1');
+    tl.from(".job-1", 3, { x: "-280", opacity: 0, ease: Power3.easeOut }, '+=.3');
     tl.from(".job-2", 4, { opacity: 0, ease: Power3.easeOut }, '-=.3');
     tl.from(".job-3", 3, { x: "-280", opacity: 0, ease: Power3.easeOut }, '-=1');
     tl.from(".job-4", 4, { opacity: 0, ease: Power3.easeOut }, '-=.5');
