@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="/scss/animate.css" />
+
+  <title>Contact Me</title>
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+
+      <ul class="menu-nav">
+        <li class="nav-items">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-items">
+          <a href="about.html" class="nav-link">
+            About me
+          </a>
+        </li>
+
+        <li class="nav-items">
+          <a href="work.html" class="nav-link">
+            My Work
+          </a>
+        </li>
+
+        <li class="nav-items current">
+          <a href="contact.html" class="nav-link">
+            How To Reach Me
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contact">
+    <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
+    <!-- <h2 class="sm-heading">
+      This is how you can reach me
+    </h2> -->
+    <div class="boxes">
+      <div>
+        <span class="text-secondary">Email: </span> mristiqa@gmail.com
+      </div>
+      <div><span class="text-secondary">Phone: </span> 060 123456</div>
+      <div>
+        <span class="text-secondary">Address: </span> Bulevar Mihajla Pupina
+      </div>
+    </div>
+  </main>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+
+  <script>
+    var tl = new TimelineMax();
+
+    tl.from(".lg-heading", 3, { opacity: 0, ease: Power3.easeOut }, '+=.2');
+    tl.from(".text-secondary", 2, { opacity: 0, ease: Power3.easeOut }, '-=.8');
+    tl.from(".boxes", 3, { opacity: 0, ease: Power3.easeOut }, '-=2');
+
+  </script>
+
+  <!-- <footer id="main-footer">
+      Copyright &copy; 2019
+    </footer> -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
