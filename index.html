@@ -55,10 +55,10 @@
   </header>
 
   <main id="home">
-    <h1 class="lg-heading animated fadeIn">
+    <h1 class="lg-heading">
       Miloš <span class="text-secondary">Ristić</span>
     </h1>
-    <h2 class="sm-heading animated fadeInUp">
+    <h2 class="sm-heading">
       Web Developer & QA Analyst
     </h2>
     <div class="icons">
@@ -185,6 +185,9 @@
     tl.from("#close_button", 1, { x: "680", opacity: 0, ease: Power2.easeOut }, "-=1.1");
     tl.from("#maximize_button", 0.9, { x: "680", opacity: 0, ease: Power1.easeOut }, "-=.5");
     tl.from("#minimize_button", 0.9, { x: "680", opacity: 0, ease: Power1.easeOut }, "-=.3");
+    //tl.from(".text-secondary", 0.9, { y: "-380", opacity: 0, ease: Power1.easeOut }, "-=.3");
+    tl.from(".lg-heading", 4, { y: "680", opacity: 0, ease: Power4.easeOut }, "-=.9");
+    tl.from(".sm-heading", 4, { opacity: 0, ease: Power1.easeOut }, "-=.6");
   </script>
   <script src="js/main.js"></script>
 </body>
